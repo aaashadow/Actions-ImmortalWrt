@@ -45,7 +45,6 @@ jobs:
 
       - name: 复制当前仓库的配置文件到 ImmortalWrt 仓库  (Copy current repo config to ImmortalWrt repo)
         run: cp -f .config feeds.conf.default diy.sh immortalwrt/
-             cp mt7981b-cudy-tr3000-v1.dts immortalwrt/target/linux/mediatek/dts/
 
       - name: 运行 diy.sh (Run diy.sh)
         working-directory: immortalwrt
